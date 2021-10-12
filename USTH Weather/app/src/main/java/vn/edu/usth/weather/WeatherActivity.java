@@ -6,6 +6,9 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TableLayout;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class WeatherActivity extends AppCompatActivity {
     @Override
@@ -13,12 +16,15 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        PagerAdapter adapter = new HomeFragmentPaperAdapter(
+        PagerAdapter adapter = new HomeFragmentPagerAdapter(
                 getSupportFragmentManager());
 
-        ViewPager paper = (ViewPager) findViewById(R.id.paper);
-        paper.setOffscreenPageLimit(3);
-        paper.setAdapter(adapter);
+        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        pager.setOffscreenPageLimit(3);
+        pager.setAdapter(adapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
+        tabLayout.setupWithViewPager(pager);
 
     }
 

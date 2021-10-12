@@ -8,9 +8,14 @@
     tools:context=".WeatherActivity"
     android:orientation="vertical">
 
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:id="@+id/tab" />
+
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/paper"/>
+        android:id="@+id/pager"/>
 
 </LinearLayout>
