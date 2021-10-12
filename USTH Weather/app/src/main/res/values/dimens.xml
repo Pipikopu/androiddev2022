@@ -5,4 +5,10 @@
     <dimen name="icon_margin">25px</dimen>
     <dimen name="forecast_margin">40px</dimen>
     <dimen name="weather_height">300px</dimen>
+    <dimen name="weather_text1_margin_top">200px</dimen>
+    <dimen name="weather_text1_margin_start">100px</dimen>
+    <dimen name="weather_text2_margin_end">150px</dimen>
+    <dimen name="weather_text2_margin_top">225px</dimen>
+
+
 </resources>
