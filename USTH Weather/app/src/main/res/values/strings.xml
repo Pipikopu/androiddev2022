@@ -22,5 +22,7 @@
     <string name="hanoi">Ha Noi</string>
     <string name="paris">Paris</string>
     <string name="toulouse">Toulouse</string>
+    <string name="refresh">Refresh</string>
+    <string name="setting">Setting</string>
 
 </resources>
