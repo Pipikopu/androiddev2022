@@ -9,20 +9,20 @@
     <!-- TODO: Update blank fragment layout -->
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="300px"
+        android:layout_height="@dimen/weather_height"
         android:src="@drawable/sun"
         android:layout_centerInParent="true"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="30C\nSunny"
-        android:layout_alignParentLeft="true"/>
+        android:text="@string/today"
+        android:layout_alignParentStart="true"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Paris"
-        android:layout_alignParentRight="true"/>
+        android:text="@string/hanoi"
+        android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="hello_blank_fragment">Xin chào Tập rỗng</string>
+
+    <string name="sun">Chủ Nhật</string>
+    <string name="mon">Thứ Hai</string>
+    <string name="tue">Thứ Ba</string>
+    <string name="wed">Thứ Tư</string>
+    <string name="thu">Thứ Năm</string>
+    <string name="fri">Thứ Sáu</string>
+    <string name="sat">Thứ Bảy</string>
+
+    <string name="partly_cloud">Nhiều Mây</string>
+    <string name="shower">Mưa Phùn</string>
+    <string name="rain">"Mưa "</string>
+    <string name="storm">Bão</string>
+    <string name="windy">Gió Mạnh</string>
+    <string name="foggy">Sương Mù</string>
+
+    <string name="today">30C\nNắng Đẹp</string>
+    <string name="hanoi">Hà Nội</string>
+    <string name="paris">Pa-ri</string>
+    <string name="toulouse">Tu-lu</string>
+
+</resources>

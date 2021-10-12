@@ -17,20 +17,21 @@
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Mon"
-            android:gravity="center"/>
+            android:text="@string/mon"
+            android:gravity="center"
+            tools:ignore="NestedWeights" />
         <ImageView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/cloud"
             android:layout_gravity="center"
-            android:layout_margin="40px"/>
+            android:layout_margin="@dimen/icon_margin"/>
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Partly Cloudy \n24C - 31C"
+            android:text="@string/partly_cloud"
             android:gravity="center_vertical"/>
     </LinearLayout>
 
@@ -43,20 +44,21 @@
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Tue"
-            android:gravity="center" />
+            android:text="@string/tue"
+            android:gravity="center"
+            tools:ignore="NestedWeights" />
         <ImageView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/rain"
             android:layout_gravity="center"
-            android:layout_margin="40px"/>
+            android:layout_margin="@dimen/icon_margin"/>
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Shower \n24C - 30C"
+            android:text="@string/shower"
             android:gravity="center_vertical"/>
     </LinearLayout>
 
@@ -69,20 +71,21 @@
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Wed"
-            android:gravity="center"/>
+            android:text="@string/wed"
+            android:gravity="center"
+            tools:ignore="NestedWeights" />
         <ImageView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/rain"
             android:layout_gravity="center"
-            android:layout_margin="40px"/>
+            android:layout_margin="@dimen/icon_margin"/>
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Rain \n22C - 23C"
+            android:text="@string/rain"
             android:gravity="center_vertical"/>
     </LinearLayout>
 
@@ -95,20 +98,21 @@
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Thu"
-            android:gravity="center"/>
+            android:text="@string/thu"
+            android:gravity="center"
+            tools:ignore="NestedWeights" />
         <ImageView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/storm"
             android:layout_gravity="center"
-            android:layout_margin="40px"/>
+            android:layout_margin="@dimen/icon_margin"/>
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Storm \n22C - 27C"
+            android:text="@string/storm"
             android:gravity="center_vertical"/>
     </LinearLayout>
 
@@ -121,20 +125,21 @@
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Fri"
-            android:gravity="center"/>
+            android:text="@string/fri"
+            android:gravity="center"
+            tools:ignore="NestedWeights" />
         <ImageView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/cloud"
             android:layout_gravity="center"
-            android:layout_margin="40px"/>
+            android:layout_margin="@dimen/icon_margin"/>
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Mostly Cloudy \n22C - 30C"
+            android:text="@string/partly_cloud"
             android:gravity="center_vertical"/>
     </LinearLayout>
 
@@ -147,20 +152,21 @@
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Sat"
-            android:gravity="center"/>
+            android:text="@string/sat"
+            android:gravity="center"
+            tools:ignore="NestedWeights" />
         <ImageView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/wind"
             android:layout_gravity="center"
-            android:layout_margin="40px"/>
+            android:layout_margin="@dimen/icon_margin"/>
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Windy \n24C - 31C"
+            android:text="@string/windy"
             android:gravity="center_vertical"/>
     </LinearLayout>
 
@@ -173,20 +179,21 @@
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Sun"
-            android:gravity="center"/>
+            android:text="@string/sun"
+            android:gravity="center"
+            tools:ignore="NestedWeights" />
         <ImageView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/fog"
             android:layout_gravity="center"
-            android:layout_margin="40px"/>
+            android:layout_margin="@dimen/icon_margin"/>
         <TextView
             android:layout_width="0px"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Foggy \n25C - 28C"
+            android:text="@string/foggy"
             android:gravity="center_vertical"/>
     </LinearLayout>
 

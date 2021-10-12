@@ -6,7 +6,6 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TableLayout;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -16,7 +15,7 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        PagerAdapter adapter = new HomeFragmentPagerAdapter(
+        PagerAdapter adapter = new WeatherFragmentPagerAdapter(
                 getSupportFragmentManager());
 
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
