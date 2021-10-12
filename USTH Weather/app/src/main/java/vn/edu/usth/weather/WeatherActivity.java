@@ -1,6 +1,8 @@
 package vn.edu.usth.weather;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager.widget.PagerAdapter;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -11,8 +13,13 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        ForecastFragment firstFragment = new ForecastFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.container, firstFragment).commit();
+        PagerAdapter adapter = new HomeFragmentPaperAdapter(
+                getSupportFragmentManager());
+
+        ViewPager paper = (ViewPager) findViewById(R.id.paper);
+        paper.setOffscreenPageLimit(3);
+        paper.setAdapter(adapter);
+
     }
 
     @Override
