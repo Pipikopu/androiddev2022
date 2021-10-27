@@ -2,10 +2,13 @@ package vn.edu.usth.weather;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.loader.content.AsyncTaskLoader;
 import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager.widget.PagerAdapter;
 
+import android.content.AsyncQueryHandler;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -32,10 +35,25 @@ public class WeatherActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
         tabLayout.setupWithViewPager(pager);
-
-
-
     }
+
+    private class Tasks extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void... params) {
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void v) {
+            Toast.makeText(WeatherActivity.this, "Refreshing", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -43,37 +61,11 @@ public class WeatherActivity extends AppCompatActivity {
         return true;
     }
 
-    final Handler handler = new Handler(Looper.getMainLooper()) {
-        @Override
-        public void handleMessage(Message msg) {
-            String content = msg.getData().getString("server_response");
-            Toast.makeText(WeatherActivity.this, content, Toast.LENGTH_SHORT).show();
-        }
-    };
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.refresh:
-                Thread t = new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            Thread.sleep(5000);
-                        }
-                        catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                        Bundle bundle = new Bundle();
-                        bundle.putString("server_response", "Refreshing");
-
-                        Message msg = new Message();
-                        msg.setData(bundle);
-                        handler.sendMessage(msg);
-                    }
-
-                });
-                t.start();
+                new Tasks().execute();
                 return true;
             case R.id.setting:
                 Intent intent = new Intent(WeatherActivity.this, PrefActivity.class);
