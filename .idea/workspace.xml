@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c2af11f-9195-48fe-994d-89d78750ff35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USTH Weather/app/src/main/java/vn/edu/usth/weather/ForecastFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USTH Weather/app/src/main/res/layout/activity_weather.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USTH Weather/app/src/main/res/layout/fragment_forecast.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USTH Weather/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/USTH Weather/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USTH Weather/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/USTH Weather/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USTH Weather/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/USTH Weather/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USTH Weather/app/src/main/java/vn/edu/usth/weather/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/USTH Weather/app/src/main/java/vn/edu/usth/weather/WeatherActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USTH Weather/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/USTH Weather/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
